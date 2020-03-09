@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tarefa 1</title>
+	<style>
+		@font-face {
+    	font-family: SimpsonsFont;
+    	src: url('fonts/Simpsonfont.otf');
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			color: black;
+			box-sizing: border-box;
+			list-style: none;
+			font-family: SimpsonsFont, Tahoma, Arial, Sans-serif;
+		}
+		html, body { height: 100%; }
+		body { position: relative; }
+		img { display: block; }
+		header {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+		}
+		nav ul {
+			display: flex;
+			margin: 0 2rem;
+		}
+		nav ul li:hover { background: #e4be1b; }
+		nav ul li a:hover { color: #fff; }
+		nav ul li:active { background: #fed834; }
+		nav ul li a {
+			text-decoration: none;
+			padding: 1rem;
+			display: block;
+		}
+		section {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: #fff;
+			height: 100vh;
+		}
+		section a:hover { color: blue; }
+		section article {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			height: 100%;
+		}
+		article h1,
+		article p {
+			padding: 1rem 2rem;
+		}
+		article p { text-align: justify; }
+		aside {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			background: #6aaedf;
+		}
+		footer {
+			position: fixed;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 1rem;
+			bottom: 0;
+			width: 100%;
+		}
+		footer img { width: 50px; }
+		.yellow-simpson { background-color: #fed41e; }
+	</style>
+</head>
+<body>
+	
+	<header class="yellow-simpson">
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav> 
+	</header>
+
+	<main role="main">
+		<section>
+			<article>
+				<h1>D'oh!</h1>
+				<p>O cuidado em identificar pontos criticos na adoçao de politicas descentralizadoras deve passar por modificaçoes independentemente do levantamento das variaveis envolvidas.</p>
+				<p>Para maiores informaçoes, acesse <a href="https://www2.faccat.br/portal/" target="_blank">Faccat</a></p>
+			</article>
+			<aside>
+				<a href="https://www.google.com/search?q=homer+simpson+d%27oh&rlz=1C1GCEU_enBR832BR832&oq=homer&aqs=chrome.0.69i59l2j69i57j0l5.1143j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+					<figure>
+						<img src="https://i.pinimg.com/originals/3a/11/68/3a116884945f870924f1ffd3f36fc015.png" alt="Homer Simpson D'oh" title="Homer Simpson D'oh">
+					</figure>
+				</a>
+			</aside>
+		</section>
+	</main>
+
+	<footer class="yellow-simpson">
+		<a href="https://www2.faccat.br/portal/" target="_blank">
+			<figure>
+				<img src="https://www2.faccat.br/portal/sites/default/files/ckeditorfiles/Logo%20FACCAT%20-%20P&B.png" alt="">
+			</figure>
+		</a>
+		<span>@igorfelcam</span>
+	</footer>
+
+	<!-- Tags HTML5: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element -->
+	<!-- Usando o Flexbox CSS3: https://origamid.com/projetos/flexbox-guia-completo/ -->
+	<!-- PX, EM e REM no CSS3: https://tableless.com.br/unidade-pixels-em-rem/ -->
+	<!-- Utilizar fonts externas: https://tableless.com.br/font-face-fonts-externas-na-web/ -->
+	<!-- Font usada de exemplo Simpsons: https://www.dafont.com/pt/simpsonfont.font -->
+</body>
+</html>
